@@ -41,6 +41,7 @@ jobs:
           git remote add aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
           git config --list
           git clone codecommit::ap-northeast-1://pycon.jp.2021.teaser
+          git config --list
 
       - name: push
         run: |
