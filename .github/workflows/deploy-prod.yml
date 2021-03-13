@@ -43,7 +43,7 @@ jobs:
           git clone codecommit::ap-northeast-1://pycon.jp.2021.teaser
           cd pycon.jp.2021.teaser
           git config --list
-          ls -al
+          ls -al .git
 
       - name: push
         run: |
