@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: 14.x
 
+      - name: install library
+        run: |
+          echo  ${{ secrets.test }}
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
