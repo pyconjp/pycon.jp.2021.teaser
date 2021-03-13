@@ -1,4 +1,4 @@
-name: Deploy Dev
+name: Deploy Prod
 
 on:
   deployment:
@@ -22,18 +22,17 @@ jobs:
       with:
         node-version: 14.x
 
-    - name: set secrets
-      run: |
-        export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-        export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-northeast-1
 
     - name: install library
       run: |
         pip3 install git-remote-codecommit
         git remote add aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
-        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-        unzip awscliv2.zip
-        sudo ./aws/install
 
     - name: push
       run: |
