@@ -40,6 +40,6 @@ jobs:
           export PATH=/home/runner/.local/bin/:$PATH
           git clone https://github.com/pyconjp/pycon.jp.2021.teaser.git
           cd pycon.jp.2021.teaser
-          git remote add remote-aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
-          git push remote-aws master:master
+          git remote add aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
+          git push aws master:master
 

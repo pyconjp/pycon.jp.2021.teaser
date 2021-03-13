@@ -29,12 +29,14 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
 
-      - name: install library
+      - name: install library and push
         run: |
+          pip3 --version
           pip3 install git-remote-codecommit
-          git remote add aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
-
-      - name: push
-        run: |
+          export PATH=/home/runner/.local/bin/:$PATH
+          git clone https://github.com/pyconjp/pycon.jp.2021.teaser.git
+          cd pycon.jp.2021.teaser
           git checkout -b develop origin/develop
+          git remote add aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
           git push aws develop:develop
+
