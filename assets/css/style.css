@@ -1,0 +1,23 @@
+.en-title-font {
+  font-family: 'Oswald';
+  line-height: 1.2;
+  font-weight: regular;
+}
+
+.en-regular-font {
+  font-family: 'Oswald';
+  line-height: 1.6;
+  font-weight: light;
+}
+
+.jp-title-font {
+  font-family: 'Noto Sans JP';
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.jp-regular-font {
+  font-family: 'Noto Sans JP';
+  line-height: 1.6;
+  font-weight: regular;
+}
