@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="text-white">
     <TopContent></TopContent>
     <SubContent></SubContent>
   </div>
