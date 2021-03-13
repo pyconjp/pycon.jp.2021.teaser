@@ -46,4 +46,4 @@ jobs:
 
       - name: push
         run: |
-          git push aws master
+          git push remote-aws master
