@@ -1,8 +1,24 @@
 <template>
   <div>
+    <Header></Header>
     <Nuxt />
+    <Footer></Footer>
   </div>
 </template>
+
+<script>
+import Header from '~/components/Domains/Header'
+import Footer from '~/components/Domains/Footer'
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+  head() {
+    return this.$nuxtI18nSeo()
+  },
+}
+</script>
 
 <style>
 html {
