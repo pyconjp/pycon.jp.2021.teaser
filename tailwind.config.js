@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -12,6 +14,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["'Noto Sans JP'", ...defaultTheme.fontFamily.sans],
+      oswald: 'Oswald',
+    },
   },
   variants: {},
   plugins: [],
