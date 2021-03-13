@@ -38,15 +38,16 @@ jobs:
           export PATH=/home/runner/.local/bin/:$PATH
           pip3 --version
           pip3 install git-remote-codecommit
-          git remote add remote-aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
-          git config --list
-          cat .git/config
-          git clone codecommit::ap-northeast-1://pycon.jp.2021.teaser
-          cd pycon.jp.2021.teaser
-          git config --list
-          ls -al .git
-          git remote add remote-aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
+          git remote set-url origin codecommit::ap-northeast-1://pycon.jp.2021.teaser
+          # git remote add remote-aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
+          # git config --list
+          # cat .git/config
+          # git clone codecommit::ap-northeast-1://pycon.jp.2021.teaser
+          # cd pycon.jp.2021.teaser
+          # git config --list
+          # ls -al .git
+          # git remote add remote-aws codecommit::ap-northeast-1://pycon.jp.2021.teaser
 
       - name: push
         run: |
-          git push remote-aws master
+          git push origin master
