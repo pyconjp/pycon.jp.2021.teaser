@@ -45,7 +45,7 @@ jobs:
           cd pycon.jp.2021.teaser
           git config --list
           ls -al .git
-          cat .git/hooks
+          ls .git/hooks
 
       - name: push
         run: |
