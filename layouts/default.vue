@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen bg">
+  <div class="flex flex-col text-white bg">
     <Header></Header>
-    <Nuxt />
+    <main class="flex-1"><Nuxt /></main>
     <Footer></Footer>
   </div>
 </template>
