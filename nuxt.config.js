@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Py Con JP 2021',
+    title: 'PyCon JP 2021',
     htmlAttrs: {
       lang: 'ja',
     },
@@ -72,11 +72,6 @@ export default {
       Roboto: true,
       Oswald: true,
       'Noto Sans JP': true,
-      // Lato: [100, 300],
-      // Raleway: {
-      //   wght: [100, 400],
-      //   ital: [100],
-      // },
     },
     display: 'swap',
   },
