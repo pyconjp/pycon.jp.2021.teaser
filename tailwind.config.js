@@ -18,6 +18,13 @@ module.exports = {
       sans: ["'Noto Sans JP'", ...defaultTheme.fontFamily.sans],
       oswald: 'Oswald',
     },
+    screens: {
+      'sm': '600px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   variants: {},
   plugins: [],
