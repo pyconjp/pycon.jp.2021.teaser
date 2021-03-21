@@ -15,7 +15,7 @@
             </p>
             <p class="pt-5 text-center jp-title-font">スタッフ募集中！</p>
             <p class="pt-5 text-center jp-title-font">詳しくは下のボタンから</p>
-            <button>See More</button>
+            <MyButton>See More</MyButton>
           </div>
           <div>
             <p class="pt-5 text-2xl text-center en-regular-font">
@@ -23,7 +23,7 @@
             </p>
             <p class="pt-5 text-center jp-title-font">登壇者募集中！</p>
             <p class="pt-5 text-center jp-title-font">詳しくは下のボタンから</p>
-            <button>See More</button>
+            <MyButton>See More</MyButton>
           </div>
         </div>
       </div>
@@ -32,7 +32,12 @@
 </template>
 
 <script>
-export default {}
+import MyButton from '~/components/Elements/Button.vue'
+export default {
+  components: {
+    MyButton,
+  },
+}
 </script>
 
 <style scoped>
