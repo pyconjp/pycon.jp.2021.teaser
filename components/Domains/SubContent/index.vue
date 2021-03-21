@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mt-32 sub-content__bg">
+  <div class="flex flex-col sub-content__bg">
     <div class="flex content-center justify-center">
       <p>Latest Information</p>
     </div>
@@ -35,7 +35,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .sub-content__bg {
   background: rgba(255, 255, 255, 0.2);
 }
