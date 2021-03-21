@@ -1,39 +1,41 @@
 <template>
   <div class="flex justify-center">
     <!-- モバイルの全画面メニュー -->
-    <div
-      v-if="isMobileMenu"
-      class="mobile-menu"
-      :class="{ 'overflow-hidden': isMobileMenu }"
-    >
-      <div class="flex flex-col items-center w-full mobile-menu-content">
-        <a
-          v-for="item in linkList"
-          :key="item.text"
-          class="mb-5 text-base text-center en-title-font"
-          :href="item.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >{{ item.text }}</a
-        >
-        <a
-          class="mt-5"
-          href="https://www.facebook.com/PyConJP"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+    <transition>
+      <div
+        v-if="isMobileMenu"
+        class="mobile-menu"
+        :class="{ 'overflow-hidden': isMobileMenu }"
+      >
+        <div class="flex flex-col items-center w-full mobile-menu-content">
+          <a
+            v-for="item in linkList"
+            :key="item.text"
+            class="mb-5 text-base text-center en-title-font"
+            :href="item.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ item.text }}</a
+          >
+          <a
+            class="mt-5"
+            href="https://www.facebook.com/PyConJP"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="~/assets/image/facebook.png"
+              alt="Facebook Icon"
+              class="w-5 h-5 ml-auto mr-auto"
+          /></a>
           <img
-            src="~/assets/image/facebook.png"
-            alt="Facebook Icon"
-            class="w-5 h-5 ml-auto mr-auto"
-        /></a>
-        <img
-          src="~/assets/image/header-logo.png"
-          alt="Header Logo"
-          class="w-10 h-10 mt-10"
-        />
+            src="~/assets/image/header-logo.png"
+            alt="Header Logo"
+            class="w-10 h-10 mt-10"
+          />
+        </div>
       </div>
-    </div>
+    </transition>
     <!-- ここまで  -->
 
     <!-- モバイル版のヘッダー -->
@@ -149,10 +151,8 @@ export default {
       this.isMobileMenu = !this.isMobileMenu
       if (this.isMobileMenu) {
         document.body.style.overflow = 'hidden'
-        // document.addEventListener('touchmove', this.bodyScroll, false)
       } else {
         document.body.style.overflow = ''
-        // document.removeEventListener('touchmove', this.bodyScroll, false)
       }
     },
   },
@@ -255,5 +255,15 @@ export default {
 
 .mobile-menu-content {
   margin: 22% auto;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.4s;
+}
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
