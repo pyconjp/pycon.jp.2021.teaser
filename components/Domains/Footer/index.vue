@@ -40,7 +40,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .footer__bg {
   background: #161616;
   height: 271px;
