@@ -12,22 +12,39 @@
             v-for="item in linkList"
             :key="item.text"
             class="mb-5 text-base text-center en-title-font"
+            :class="{
+              'opacity-50': item.disable,
+              'pointer-events-none': item.disable,
+            }"
             :href="item.link"
             target="_blank"
             rel="noopener noreferrer"
             >{{ item.text }}</a
           >
-          <a
-            class="mt-5"
-            href="https://www.facebook.com/PyConJP"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="~/assets/image/facebook.png"
-              alt="Facebook Icon"
-              class="w-5 h-5 ml-auto mr-auto"
-          /></a>
+          <div class="flex items-center justify-center mt-5">
+            <a
+              class=""
+              href="https://www.facebook.com/PyConJP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/image/facebook.png"
+                alt="Facebook Icon"
+                class="w-5 h-5 ml-auto mr-auto"
+            /></a>
+            <a
+              href="https://twitter.com/pyconjapan"
+              target="_blank"
+              class="ml-4"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/image/twitter.png"
+                alt="Twitter Icon"
+                class="w-5 h-5"
+            /></a>
+          </div>
           <img
             src="~/assets/image/header-logo.png"
             alt="Header Logo"
@@ -73,6 +90,10 @@
           v-for="item in linkList"
           :key="item.text"
           class="text-base en-title-font"
+          :class="{
+            'opacity-50': item.disable,
+            'pointer-events-none': item.disable,
+          }"
           :href="item.link"
           target="_blank"
           rel="noopener noreferrer"
@@ -88,6 +109,17 @@
           <img
             src="~/assets/image/facebook.png"
             alt="Facebook Icon"
+            class="w-5 h-5"
+        /></a>
+        <a
+          href="https://twitter.com/pyconjapan"
+          target="_blank"
+          class="ml-4"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="~/assets/image/twitter.png"
+            alt="Twitter Icon"
             class="w-5 h-5"
         /></a>
       </div>
@@ -107,7 +139,7 @@ export default {
       linkList: [
         {
           text: 'NEWS',
-          link: 'https://pyconjp.blogspot.com/2021/',
+          link: 'https://pyconjp.blogspot.com/search/label/pyconjp2021',
           disable: false,
         },
         {
@@ -118,23 +150,28 @@ export default {
         },
         {
           text: 'PROPOSAL',
-          link: '',
-          disable: false,
+          link: '#',
+          disable: true,
         },
         {
           text: 'SPONSOR',
-          link: '',
+          link: '#',
           disable: true,
         },
         {
           text: 'TICKET',
-          link: '',
+          link: '#',
           disable: true,
         },
         {
           text: 'REVIEWER',
-          link: '',
+          link: '#',
           disable: true,
+        },
+        {
+          text: 'CODE OF CONDUCT',
+          link: 'https://pycon.jp/2020/code-of-conduct/',
+          disable: false,
         },
       ],
     }
