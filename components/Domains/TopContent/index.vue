@@ -45,12 +45,12 @@
       </div>
       <div class="flex content-center justify-center">
         <p class="pt-5 text-2xl en-regular-font">
-          Conference: Oct.15(Fri)- 16(Sat), 2021
+          Conference: Oct.15(Fri)- 16(Sat), 2021 (tentative)
         </p>
       </div>
       <div class="flex content-center justify-center">
         <p class="text-sm jp-regular-font">
-          開催日時 : 2021年10月15日(金) - 16日(土)
+          開催予定日時 : 2021年10月15日(金) - 16日(土)
         </p>
       </div>
     </div>
@@ -162,10 +162,11 @@ export default {}
     transform: rotate(45deg);
   }
   .fireworks-red-1 {
-    position: absolute;
+    visibility: hidden;
+    /* position: absolute;
     top: -200px;
     left: -100px;
-    width: 300px;
+    width: 300px; */
   }
 
   .fireworks-red-2 {
