@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="z-10 flex justify-center">
     <!-- モバイルの全画面メニュー -->
     <transition>
       <div

@@ -1,5 +1,10 @@
 <template>
-  <div class="flex flex-col text-white bg">
+  <div class="relative flex flex-col text-white bg">
+    <img
+      src="~/assets/image/fireworks-red-1.png"
+      class="overflow fireworks-red-1"
+      alt="fireworks icon"
+    />
     <Header></Header>
     <main class="flex-1"><Nuxt /></main>
     <Footer></Footer>
@@ -43,5 +48,19 @@ html {
 .bg {
   background-image: url('@/assets/image/Rectangle.png');
   background-repeat: repeat;
+}
+
+@media screen and (max-width: 599px) {
+  .fireworks-red-1 {
+    position: absolute;
+    top: -120px;
+    left: -80px;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .fireworks-red-1 {
+    display: none;
+  }
 }
 </style>

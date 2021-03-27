@@ -3,11 +3,16 @@
     <div class="flex justify-center mt-10 mb-10 sm:mt-16 sm:mb-16">
       <div class="flex flex-col footer__contents">
         <div class="sm:flex">
-          <img
-            src="~/assets/image/pyconjp-association-logo.png"
-            class="footer__logo"
-            alt="PyCon JP Association Logo"
-          />
+          <a
+            href="https://www.pycon.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="~/assets/image/pyconjp-association-logo.png"
+              class="footer__logo"
+              alt="PyCon JP Association Logo"
+          /></a>
           <div class="mt-2 sm:ml-4 sm:mt-0">
             <p class="mb-2 font-bold sm:mb-2 sm:text-base jp-regular-font">
               主催:一般社団法人 PyCon JP Association
