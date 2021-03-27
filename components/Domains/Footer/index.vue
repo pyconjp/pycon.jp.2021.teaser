@@ -18,11 +18,26 @@
               主催:一般社団法人 PyCon JP Association
             </p>
             <p class="text-sm jp-regular-font">
-              PyCon JP 2021 in Tokyo is a production of the PyCon JP Committee.
+              PyCon JP 2021 in Tokyo is produced by the
+              <a
+                href="https://www.pycon.jp/committee/english.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline"
+                >PyCon JP Association</a
+              >
+              .
             </p>
             <p class="text-sm jp-regular-font">
               For the latest information and contact information for PyCon JP
-              2021, please visit our blog.
+              2021, please visit
+              <a
+                href="https://pyconjp.blogspot.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline"
+                >our blog</a
+              >.
             </p>
           </div>
         </div>

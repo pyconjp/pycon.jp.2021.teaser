@@ -50,7 +50,7 @@
       </div>
       <div class="flex content-center justify-center">
         <p class="text-sm jp-regular-font">
-          開催予定日時 : 2021年10月15日(金) - 16日(土)
+          開催予定日 : 2021年10月15日(金) - 16日(土)
         </p>
       </div>
     </div>
