@@ -1,15 +1,28 @@
 <template>
-  <button>
+  <button @click="openOtherWindow">
     <div class="border">
       <div class="text">
         <slot>Button</slot>
       </div>
     </div>
+    <div class="button-border"></div>
   </button>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    link: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    openOtherWindow() {
+      window.open(this.link, '', 'noopener')
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -24,6 +37,10 @@ button {
 
 button:hover {
   background: rgba(169, 136, 73, 0.6);
+}
+
+button:hover .button-border {
+  left: 93%;
 }
 
 .border {
@@ -52,5 +69,15 @@ button:hover {
   /* identical to box height */
 
   color: #ffffff;
+}
+
+.button-border {
+  position: absolute;
+  top: 50%;
+  left: 89.06%;
+  width: 28px;
+  border: 0.5px solid #ffffff;
+  background-color: #fff;
+  transition: left 0.1s;
 }
 </style>
