@@ -162,11 +162,7 @@ export default {}
     transform: rotate(45deg);
   }
   .fireworks-red-1 {
-    visibility: hidden;
-    /* position: absolute;
-    top: -200px;
-    left: -100px;
-    width: 300px; */
+    display: none;
   }
 
   .fireworks-red-2 {

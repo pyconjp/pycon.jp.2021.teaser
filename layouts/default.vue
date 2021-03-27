@@ -58,4 +58,9 @@ html {
     width: 300px;
   }
 }
+@media screen and (min-width: 600px) {
+  .fireworks-red-1 {
+    display: none;
+  }
+}
 </style>
