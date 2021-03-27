@@ -2,7 +2,7 @@
   <div class="footer__bg">
     <div class="flex justify-center mt-10 mb-10 sm:mt-16 sm:mb-16">
       <div class="flex flex-col footer__contents">
-        <div class="sm:flex sm:mb-8">
+        <div class="sm:flex">
           <img
             src="~/assets/image/pyconjp-association-logo.png"
             class="footer__logo"
@@ -27,7 +27,7 @@
           </p>
           <img
             src="~/assets/image/creative-commons-icon.png"
-            class="w-20"
+            class="licence_img"
             alt="Creative Commons 4.0"
           />
         </div>
@@ -52,7 +52,10 @@ export default {}
 .footer__contents {
   max-width: 88%;
 }
-
+.licence_img {
+  width: 88px;
+  height: 31px;
+}
 @media screen and (max-width: 599px) {
   .footer__bg {
     height: 411px;

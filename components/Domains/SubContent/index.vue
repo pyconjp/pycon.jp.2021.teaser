@@ -1,28 +1,38 @@
 <template>
   <div class="flex flex-col sub-content__bg">
-    <div class="flex content-center justify-center">
-      <p>Latest Information</p>
+    <div
+      class="flex content-center justify-center mt-16 mb-10 sm:mt-24 sm:mb-14"
+    >
+      <div class="custom-border"></div>
+      <p class="mx-3">Latest Information</p>
+      <div class="custom-border"></div>
     </div>
 
-    <div class="flex content-center justify-center">
+    <div class="flex content-center justify-center mb-20 sm:mb-32">
       <div class="w-4/6">
         <div
-          class="grid items-center content-center grid-cols-2 justify-items-center"
+          class="grid items-center content-center grid-cols-1 sm:grid-cols-2 justify-items-center"
         >
           <div>
             <p class="pt-5 text-2xl text-center en-regular-font">
               We need staff
             </p>
-            <p class="pt-5 text-center jp-title-font">スタッフ募集中！</p>
-            <p class="pt-5 text-center jp-title-font">詳しくは下のボタンから</p>
+            <p class="pt-2 text-sm text-center jp-title-font">
+              スタッフ募集中！
+            </p>
+            <p class="pt-1 text-sm text-center jp-title-font">
+              詳しくは下のボタンから
+            </p>
             <MyButton>See More</MyButton>
           </div>
-          <div>
+          <div class="mt-10 sm:mt-0">
             <p class="pt-5 text-2xl text-center en-regular-font">
               Won't you be a speaker?
             </p>
-            <p class="pt-5 text-center jp-title-font">登壇者募集中！</p>
-            <p class="pt-5 text-center jp-title-font">詳しくは下のボタンから</p>
+            <p class="pt-2 text-sm text-center jp-title-font">登壇者募集中！</p>
+            <p class="pt-1 text-sm text-center jp-title-font">
+              詳しくは下のボタンから
+            </p>
             <MyButton>See More</MyButton>
           </div>
         </div>
@@ -43,5 +53,13 @@ export default {
 <style scoped>
 .sub-content__bg {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.custom-border {
+  margin-top: 13px;
+  width: 64px;
+  height: 0;
+  border: 1px solid #ffffff;
+  background-color: #fff;
 }
 </style>
