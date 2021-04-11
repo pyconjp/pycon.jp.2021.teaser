@@ -129,7 +129,6 @@
 </template>
 
 <script>
-const mediaQuery = window.matchMedia('(max-width: 599px)')
 export default {
   name: 'Header',
   data() {
@@ -176,8 +175,9 @@ export default {
       ],
     }
   },
-  created() {
+  mounted() {
     const self = this
+    const mediaQuery = window.matchMedia('(max-width: 599px)')
     this.mobile = mediaQuery.matches
     mediaQuery.addEventListener('change', () => {
       self.mobile = !self.mobile
