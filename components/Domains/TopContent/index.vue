@@ -44,7 +44,7 @@
         <div class="custom-border"></div>
       </div>
       <div class="flex content-center justify-center">
-        <p class="pt-5 text-2xl en-regular-font">
+        <p class="pt-5 text-2xl text-center en-regular-font">
           Conference: Oct.15(Fri)- 16(Sat), 2021 (tentative)
         </p>
       </div>
