@@ -59,6 +59,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -74,5 +75,8 @@ export default {
       'Noto Sans JP': true,
     },
     display: 'swap',
+  },
+  optimizedImages: {
+    optimizeImages: true,
   },
 }
