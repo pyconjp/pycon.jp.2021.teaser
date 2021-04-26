@@ -45,12 +45,12 @@
       </div>
       <div class="flex content-center justify-center">
         <p class="pt-5 text-2xl text-center en-regular-font">
-          Conference: Oct.15(Fri)- 16(Sat), 2021 (tentative)
+          Conference: Oct.15(Fri)- 16(Sat), 2021
         </p>
       </div>
       <div class="flex content-center justify-center">
         <p class="text-sm jp-regular-font">
-          開催予定日 : 2021年10月15日(金) - 16日(土)
+          開催日 : 2021年10月15日(金) - 16日(土)
         </p>
       </div>
     </div>
