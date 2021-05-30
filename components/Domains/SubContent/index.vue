@@ -14,7 +14,7 @@
           コンテンツの要素が2個になった場合は、以下のsm:grid-cols-1をsm:grid-cols-2に変更すること
         -->
         <div
-          class="grid items-center content-center grid-cols-1 sm:grid-cols-3 justify-items-center"
+          class="grid items-center content-center grid-cols-1 sm:grid-cols-2 justify-items-center"
         >
           <div>
             <p class="pt-5 text-2xl text-center en-regular-font">
