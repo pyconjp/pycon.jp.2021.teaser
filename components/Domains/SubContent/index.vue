@@ -40,12 +40,12 @@
               詳しくは下のボタンから
             </p>
             <MyButton
-              link="https://pyconjp.blogspot.com/2021/05/discussing-pyconjp-2021-proposal-plan.html"
+              link="https://pyconjp.blogspot.com/2021/05/start-proposal.html"
               >See More</MyButton
             >
           </div>
 
-          <div class="mt-10 sm:mt-0">
+          <div class="mt-10 sm:mt-0 col-span-2">
             <p class="pt-5 text-2xl text-center en-regular-font">
               Please be our sponsor!
             </p>
@@ -56,7 +56,7 @@
               詳しくは下のボタンから
             </p>
             <MyButton
-              link="https://pyconjp.blogspot.com/2021/05/pycon-jp-2021.html"
+              link="https://pyconjp.blogspot.com/2021/05/pycon-jp-2021_01988973482.html"
               >See More</MyButton
             >
           </div>
@@ -96,5 +96,9 @@ export default {
   height: 0;
   border: 1px solid #ffffff;
   background-color: #fff;
+}
+.custom-center {
+  display: grid;
+  place-items: center;
 }
 </style>
