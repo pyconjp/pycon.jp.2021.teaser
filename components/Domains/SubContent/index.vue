@@ -45,7 +45,7 @@
             >
           </div>
 
-          <div class="mt-10 sm:mt-0 col-span-2">
+          <div class="mt-10 sm:mt-10 sm:col-span-2">
             <p class="pt-5 text-2xl text-center en-regular-font">
               Please be our sponsor!
             </p>
