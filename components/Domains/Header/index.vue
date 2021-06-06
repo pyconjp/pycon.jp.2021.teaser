@@ -149,13 +149,13 @@ export default {
         },
         {
           text: 'PROPOSAL',
-          link: '#',
-          disable: true,
+          link: 'https://pyconjp.blogspot.com/2021/05/start-proposal.html',
+          disable: false,
         },
         {
           text: 'SPONSOR',
-          link: '#',
-          disable: true,
+          link: 'https://pyconjp.blogspot.com/2021/05/pycon-jp-2021_01988973482.html',
+          disable: false,
         },
         {
           text: 'TICKET',
@@ -169,7 +169,7 @@ export default {
         },
         {
           text: 'CODE OF CONDUCT',
-          link: 'https://pycon.jp/2020/code-of-conduct/',
+          link: 'https://drive.google.com/file/d/1iNF7VvDCd_gWDsSn2i5U8FB1IQWkWOM9/view',
           disable: false,
         },
       ],
